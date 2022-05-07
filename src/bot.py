@@ -42,6 +42,9 @@ def send_random_4k_pic(message):
 
 @bot.message_handler(commands=["topic"])
 def handle_text(message):
+    """
+    request the user to send the topics
+    """
     chat_id = message.chat.id
     message_topics = bot.send_message(
         chat_id, "Type the topic(s) separated with commas"
@@ -50,7 +53,10 @@ def handle_text(message):
 
 
 def step_set_topics(message):
+    """
+    get images according to topics
+    """
     chat_id = message.chat.id
     topics = message.text
     response = requests.get("https://source.unsplash.com/random?{0}".format(topics))
-    bot.send_photo(message.chat.id, response.content)
+    bot.send_photo(chat_id, response.content)
