@@ -1,7 +1,7 @@
 import flask
 import telebot
 
-from bot import bot
+from .bot import bot
 
 app = flask.Flask(__name__)
 
