@@ -15,6 +15,9 @@ def index():
 
 @app.route(WEBHOOK_URL_PATH, methods=["GET"])
 def webhook():
+    """
+    sets the bot webhook
+    """
     if flask.request.headers.get("content-type") == "application/json":
         json_string = flask.request.get_data().decode("utf-8")
         update = telebot.types.Update.de_json(json_string)
