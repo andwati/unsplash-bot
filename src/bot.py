@@ -14,6 +14,8 @@ bot.set_webhook(
         os.getenv("PROJECT_NAME"), os.getenv("TELEGRAM_TOKEN")
     )
 )
+print(os.getenv("PROJECT_NAME"))
+print(os.getenv("TELEGRAM_TOKEN"))
 
 
 @bot.message_handler(commands=["start"])
