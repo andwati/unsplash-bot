@@ -10,12 +10,12 @@ app = flask.Flask(__name__)
 WEBHOOK_URL_PATH = "/{}".format(bot.token)
 
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def index():
     return "<h1>Index page</h1>"
 
 
-@app.route(WEBHOOK_URL_PATH, methods=["GET"])
+@app.route(WEBHOOK_URL_PATH, methods=["POST"])
 def webhook():
     """
     sets the bot webhook

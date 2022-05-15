@@ -8,9 +8,12 @@ load_dotenv()
 
 bot = telebot.TeleBot(os.getenv("TELEGRAM_TOKEN"))
 
+# remove previous webhook
+bot.remove_webhook()
+
 # configure the webhook for the bot
 bot.set_webhook(
-    "https://{}.herokuapp.com/{}".format(
+    "https://{}.herokuapp.com/{}/".format(
         os.getenv("PROJECT_NAME"), os.getenv("TELEGRAM_TOKEN")
     )
 )
