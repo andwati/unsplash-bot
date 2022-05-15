@@ -1,1 +1,1 @@
-web: python -m src.server $PORT
+web: gunicorn wsgi:app
