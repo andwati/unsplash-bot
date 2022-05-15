@@ -12,7 +12,7 @@ bot = telebot.TeleBot(os.getenv("TELEGRAM_TOKEN"))
 
 bot.remove_webhook()
 
-time.sleep(0.1)
+time.sleep(3)
 # configure the webhook for the bot
 bot.set_webhook(
     "https://{}.herokuapp.com/{}".format(
