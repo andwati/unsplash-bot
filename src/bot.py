@@ -1,14 +1,17 @@
-from os import environ
+import os
 
 import requests
 import telebot
+from dotenv import load_dotenv
 
-bot = telebot.TeleBot(environ["TELEGRAM_TOKEN"])
+load_dotenv()
+
+bot = telebot.TeleBot(os.getenv("TELEGRAM_TOKEN"))
 
 # configure the webhook for the bot
 bot.set_webhook(
     "https://{}.herokuapp.com/{}".format(
-        environ["PROJECT_NAME"], environ["TELEGRAM_TOKEN"]
+        os.getenv("PROJECT_NAME"), os.getenv("TELEGRAM_TOKEN")
     )
 )
 
