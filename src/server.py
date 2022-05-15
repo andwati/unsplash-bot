@@ -13,7 +13,7 @@ def index():
     return "<h1>Index page</h1>"
 
 
-@app.route(WEBHOOK_URL_PATH, methods=["POST"])
+@app.route(WEBHOOK_URL_PATH, methods=["GET"])
 def webhook():
     if flask.request.headers.get("content-type") == "application/json":
         json_string = flask.request.get_data().decode("utf-8")
