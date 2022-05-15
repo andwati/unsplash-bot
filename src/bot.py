@@ -13,7 +13,7 @@ bot.remove_webhook()
 
 # configure the webhook for the bot
 bot.set_webhook(
-    "https://{}.herokuapp.com/{}/".format(
+    "https://{}.herokuapp.com/{}".format(
         os.getenv("PROJECT_NAME"), os.getenv("TELEGRAM_TOKEN")
     )
 )
