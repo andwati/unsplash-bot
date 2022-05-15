@@ -1,1 +1,1 @@
-web: python -m src.server.py
+web: python -m src.server
