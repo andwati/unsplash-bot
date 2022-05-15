@@ -1,5 +1,3 @@
-import os
-
 from src.server import app
 
 if __name__ == "__main__":
