@@ -7,9 +7,7 @@
   <a href="https://github.com/andwati/unsplash-bot/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/_andwati" target="_blank">
-    <img alt="Twitter: @_andwati" src="https://img.shields.io/twitter/follow/@_andwati.svg?style=social" />
-  </a>
+  
 </p>
 
 > A Telegram Bot to download images from https://unsplash.com
@@ -22,9 +20,7 @@
 
 👤 **Ian Andwati**
 
-* Twitter: [@\_andwati](https://twitter.com/\_andwati)
 * Github: [@andwati](https://github.com/andwati)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/andwati\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/andwati\/)
 
 ## 🤝 Contributing
 
