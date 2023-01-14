@@ -12,9 +12,7 @@
 
 > A Telegram Bot to download images from https://unsplash.com
 
-### 🏠 [Homepage](https://github.com/andwati/unsplash-bot/)
 
-### ✨ [Demo](https://t.me/miraxisbot)
 
 ## Author
 
