@@ -26,7 +26,15 @@ def send_welcome(message):
     """
     handle triggered by the /start command
     """
-    bot.reply_to(message, f"hi there {message.from_user.first_name}")
+    message_reply = f"""
+    Hi there {message.from_user.first_name}\n
+    I'll send you high quality royalty free images from https://unsplash.com\n
+    Usage\n
+    /random - Get random image\n
+    /4k - Get random 4k image\n
+    /topic - Get Image from topic(s)\n
+    """
+    bot.reply_to(message, message_reply)
 
 
 @bot.message_handler(commands=["random"])
