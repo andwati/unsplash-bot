@@ -16,7 +16,7 @@ time.sleep(3)
 # configure the webhook for the bot
 bot.set_webhook(
     "https://{}.{}/{}".format(
-        os.getenv("PROJECT_NAME"),os.getenv("PLATFORM_DOMAIN") ,os.getenv("TELEGRAM_TOKEN")
+        os.getenv("PROJECT_NAME"),os.get_env("PLATFORM_DOMAIN") ,os.getenv("TELEGRAM_TOKEN")
     )
 )
 
@@ -26,7 +26,7 @@ def send_welcome(message):
     """
     handle triggered by the /start command
     """
-    bot.reply_to(message, "hi there")
+    bot.reply_to(message, f"hi there {message.from_user}")
 
 
 @bot.message_handler(commands=["random"])
