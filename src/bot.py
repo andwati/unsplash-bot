@@ -26,7 +26,7 @@ def send_welcome(message):
     """
     handle triggered by the /start command
     """
-    bot.reply_to(message, f"hi there {message.from_user}")
+    bot.reply_to(message, f"hi there {message.from_user.first_name}")
 
 
 @bot.message_handler(commands=["random"])
