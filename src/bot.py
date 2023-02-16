@@ -15,8 +15,8 @@ bot.remove_webhook()
 time.sleep(3)
 # configure the webhook for the bot
 bot.set_webhook(
-    "https://{}.onrender.com/{}".format(
-        os.getenv("PROJECT_NAME"), os.getenv("TELEGRAM_TOKEN")
+    "https://{}.{}/{}".format(
+        os.getenv("PROJECT_NAME"),os.getenv("PLATFORM_DOMAIN") ,os.getenv("TELEGRAM_TOKEN")
     )
 )
 
