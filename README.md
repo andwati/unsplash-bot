@@ -30,5 +30,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [Ian Andwati](https://github.com/andwati).<br />
+Copyright © 2022 - 2023 [Ian Andwati](https://github.com/andwati).<br />
 This project is [MIT](https://github.com/andwati/unsplash-bot/blob/main/LICENSE) licensed.
