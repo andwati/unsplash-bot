@@ -7,6 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+flask = "^2.3.3"
+python-dotenv = "^1.0.0"
+pytelegrambotapi = "^4.14.0"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.4.0"
