@@ -24,4 +24,12 @@ def get_random_photo(message):
     bot.send_photo(message.chat.id, image_content.content, caption=description)
 
 
+# send random 4k unsplash picture
+@bot.message_handler(commands=["4k"])
+def send_random_pic(message):
+    response = requests.get("https://source.unsplash.com/random/4096x2160")
+    bot.send_photo(message.chat.id, response.content)
+    bot.send_document(message.chat.id, response.content, caption="rename_to_jpeg")
+
+
 bot.infinity_polling()
