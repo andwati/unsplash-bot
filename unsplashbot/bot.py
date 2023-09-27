@@ -12,12 +12,12 @@ def send_welcome(message):
 
 @bot.message_handler(commands=["random"])
 def get_random_photo(message):
-    url = "https://api.unsplash.com/photos/random"
+    url = f"{BASE_URL}/photos/random"
     response = requests.get(
         url, timeout=10, headers={"Authorization": f"Client-ID {ACCESS_TOKEN}"}
     )
     data = response.json()
-    image_url = data["urls"]["regular"]
+    image_url = data["links"]["download"]
     description = data["alt_description"]
     image_content = requests.get(image_url)
 
