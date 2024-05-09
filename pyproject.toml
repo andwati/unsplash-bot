@@ -6,7 +6,7 @@ authors = ["Ian Andwati <andwatiian@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 flask = "^2.3.3"
 python-dotenv = "^1.0.0"
 pytelegrambotapi = "^4.14.0"
@@ -20,7 +20,6 @@ profile = "black"
 
 [tool.black]
 line-length = 88
-target-version = ["py311"]
 trailing-comma = true
 
 
