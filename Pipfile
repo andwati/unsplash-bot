@@ -4,8 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+flask = "*"
+python-dotenv = "*"
+requests = "*"
+pytelegrambotapi = "*"
 
 [dev-packages]
+black = "*"
+isort = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.12"
