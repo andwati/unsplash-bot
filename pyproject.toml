@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-flask = "^2.3.3"
+flask = "^3.1.3"
 python-dotenv = "^1.0.0"
 pytelegrambotapi = "^4.14.0"
 requests = "^2.32.4"
